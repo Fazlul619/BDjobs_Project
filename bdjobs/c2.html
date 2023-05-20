@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Form</title>
+  </head>
+  <body>
+    <h1>Search Data</h1>
+    <form action="search_data.php" method="post">
+      <label for="searchKeyword">Keyword:</label>
+      <input type="text" id="searchKeyword" name="searchKeyword" /><br /><br />
+
+      <label for="searchAge">Age:</label>
+      <input type="number" id="searchAge" name="searchAge" /><br /><br />
+
+      <label for="searchBookType">Book Type:</label><br />
+      <input type="checkbox" id="drama" name="searchBookType[]" value="drama" />
+      <label for="drama">Drama</label><br />
+      <input type="checkbox" id="novel" name="searchBookType[]" value="novel" />
+      <label for="novel">Novel</label><br />
+      <input
+        type="checkbox"
+        id="childBook"
+        name="searchBookType[]"
+        value="childBook"
+      />
+      <label for="childBook">Child Book</label><br /><br />
+
+      <input type="submit" value="Search" />
+    </form>
+  </body>
+</html>

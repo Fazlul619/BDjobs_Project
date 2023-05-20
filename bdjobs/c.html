@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page 1</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-box {
+        border: 1px solid #ccc;
+        padding: 20px;
+      }
+      form {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-box">
+      <form action="process_form.php" method="post">
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" name="bookName" /><br /><br />
+
+        <label for="publisherName">Publisher Name:</label>
+        <input
+          type="text"
+          id="publisherName"
+          name="publisherName"
+        /><br /><br />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" /><br /><br />
+
+        <label for="pageNo">Page Number:</label>
+        <input type="number" id="pageNo" name="pageNo" /><br /><br />
+
+        <label for="publishDate">Publish Date:</label>
+        <input type="date" id="publishDate" name="publishDate" /><br /><br />
+
+        <label for="bookType">Book Type:</label><br />
+        <input type="radio" id="drama" name="bookType" value="drama" />
+        <label for="drama">Drama</label><br />
+        <input type="radio" id="novel" name="bookType" value="novel" />
+        <label for="novel">Novel</label><br />
+        <input type="radio" id="childBook" name="bookType" value="childBook" />
+        <label for="childBook">Child Book</label><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
